@@ -67,19 +67,15 @@ namespace Accepted
             app.UseRouting();
 
             app.UseAuthorization();
+
             app.UseEndpoints(endpoints => {
                 endpoints.MapControllers();
             });
-           
-
-            // Enable middleware to serve swagger-ui (HTML, JS, CSS, etc.),
-            // specifying the Swagger JSON endpoint.
+            
             app.UseSwaggerUI(c =>
             {
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "Zomato API V1");
-
-                //// To serve SwaggerUI at application's root page, set the RoutePrefix property to an empty string.
-                //c.RoutePrefix = string.Empty;
+               
             });
            
         }
