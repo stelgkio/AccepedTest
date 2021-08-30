@@ -8,11 +8,11 @@ namespace Accepted.Services
 {
     public interface IMatchOddRepository
     {
-        Task<MatchOdds> GetMatchOddById(string Id);
+        Task<MatchOdd> GetMatchOddById(string Id);
 
-        Task<List<MatchOdds>> GetAllMatchOdds();
+        Task<List<MatchOdd>> GetAllMatchOdds();
 
-        Task<bool> UpdateMatchOdds(MatchOdds data);
+        Task<bool> UpdateMatchOdds(MatchOdd data);
 
     }
 }

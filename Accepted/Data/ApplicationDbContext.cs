@@ -14,7 +14,7 @@ namespace AcceptedInterView.Data
         }
 
         public DbSet<Match> Match { get; set; }
-        public DbSet<MatchOdds> MatchOdds { get; set; }
+        public DbSet<MatchOdd> MatchOdds { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
 

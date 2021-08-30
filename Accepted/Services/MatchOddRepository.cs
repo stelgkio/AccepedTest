@@ -17,17 +17,17 @@ namespace Accepted.Services
             _db = db;
         }
 
-        public Task<List<MatchOdds>> GetAllMatchOdds()
+        public Task<List<MatchOdd>> GetAllMatchOdds()
         {
             throw new NotImplementedException();
         }
 
-        public Task<MatchOdds> GetMatchOddById(string Id)
+        public Task<MatchOdd> GetMatchOddById(string Id)
         {
             throw new NotImplementedException();
         }
 
-        public Task<bool> UpdateMatchOdds(MatchOdds data)
+        public Task<bool> UpdateMatchOdds(MatchOdd data)
         {
             throw new NotImplementedException();
         }

@@ -23,7 +23,7 @@ namespace Accepted.Services
         public async Task<List<Match>> GetAllMatchs()
         {
             try {
-                var result = await _db.Match.ToListAsync();
+                var result = await _db.Match.Include(p =>p.MatchOdds).ToListAsync();
                 return result;
             } catch (Exception ex) {
 

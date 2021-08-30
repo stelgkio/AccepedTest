@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Accepted.Models;
 using AcceptedInterView.Data;
+using Accepted.Models.DTO;
 
 namespace Accepted.Controllers
 {
@@ -23,14 +24,14 @@ namespace Accepted.Controllers
 
       
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<MatchOdds>>> GetMatchOdds()
+        public async Task<ActionResult<IEnumerable<MatchOdd>>> GetMatchOdds()
         {
             return await _context.MatchOdds.ToListAsync();
         }
 
      
         [HttpGet("{id}")]
-        public async Task<ActionResult<MatchOdds>> GetMatchOdds(int id)
+        public async Task<ActionResult<MatchOdd>> GetMatchOdds(int id)
         {
             var matchOdds = await _context.MatchOdds.FindAsync(id);
 
@@ -44,7 +45,7 @@ namespace Accepted.Controllers
 
      
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutMatchOdds(int id, MatchOdds matchOdds)
+        public async Task<IActionResult> PutMatchOdds(int id, MatchOdd matchOdds)
         {
             if (id != matchOdds.Id)
             {
@@ -74,17 +75,23 @@ namespace Accepted.Controllers
 
         
         [HttpPost]
-        public async Task<ActionResult<MatchOdds>> PostMatchOdds(MatchOdds matchOdds)
+        public async Task<ActionResult<MatchOdd>> PostMatchOdds(MatchOddDTO matchOddDTO)
         {
-            _context.MatchOdds.Add(matchOdds);
+            var data = new MatchOdd(matchOddDTO);
+            var match = await _context.Match.FindAsync(data.MatchId);
+            if(match == null) {
+                return BadRequest("Invalid Match ID");
+            }
+            data.Match = match;
+            _context.Add(data);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetMatchOdds", new { id = matchOdds.Id }, matchOdds);
+            return CreatedAtAction("GetMatchOdds", new { id = data.Id }, data);
         }
 
         // DELETE: api/MatchOdds/5
         [HttpDelete("{id}")]
-        public async Task<ActionResult<MatchOdds>> DeleteMatchOdds(int id)
+        public async Task<ActionResult<MatchOdd>> DeleteMatchOdds(int id)
         {
             var matchOdds = await _context.MatchOdds.FindAsync(id);
             if (matchOdds == null)

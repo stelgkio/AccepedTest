@@ -164,9 +164,6 @@ C:\Users\steli\source\repos\Accepted\Accepted\obj\Debug\netcoreapp3.1\Accepted.c
 C:\Users\steli\source\repos\Accepted2\AccepedTest\Accepted\obj\Debug\netcoreapp3.1\Accepted.csprojAssemblyReference.cache
 C:\Users\steli\source\repos\Accepted2\AccepedTest\Accepted\obj\Debug\netcoreapp3.1\Accepted.AssemblyInfoInputs.cache
 C:\Users\steli\source\repos\Accepted2\AccepedTest\Accepted\obj\Debug\netcoreapp3.1\Accepted.AssemblyInfo.cs
-C:\Users\steli\source\repos\Accepted2\AccepedTest\Accepted\obj\Debug\netcoreapp3.1\Accepted.csproj.CoreCompileInputs.cache
-C:\Users\steli\source\repos\Accepted2\AccepedTest\Accepted\obj\Debug\netcoreapp3.1\Accepted.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\steli\source\repos\Accepted2\AccepedTest\Accepted\obj\Debug\netcoreapp3.1\Accepted.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\steli\source\repos\Accepted2\AccepedTest\Accepted\obj\Debug\netcoreapp3.1\Accepted.dll
 C:\Users\steli\source\repos\Accepted2\AccepedTest\Accepted\obj\Debug\netcoreapp3.1\Accepted.pdb
 C:\Users\steli\source\repos\Accepted2\AccepedTest\Accepted\bin\Debug\netcoreapp3.1\appsettings.Development.json
@@ -324,3 +321,9 @@ C:\Users\steli\source\repos\Accepted2\AccepedTest\Accepted\obj\Debug\netcoreapp3
 C:\Users\steli\source\repos\Accepted2\AccepedTest\Accepted\obj\Debug\netcoreapp3.1\staticwebassets\Accepted.StaticWebAssets.Manifest.cache
 C:\Users\steli\source\repos\Accepted2\AccepedTest\Accepted\obj\Debug\netcoreapp3.1\staticwebassets\Accepted.StaticWebAssets.xml
 C:\Users\steli\source\repos\Accepted2\AccepedTest\Accepted\obj\Debug\netcoreapp3.1\Accepted.genruntimeconfig.cache
+C:\Users\steli\source\repos\Accepted2\AccepedTest\Accepted\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\steli\source\repos\Accepted2\AccepedTest\Accepted\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\steli\source\repos\Accepted2\AccepedTest\Accepted\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
+C:\Users\steli\source\repos\Accepted2\AccepedTest\Accepted\obj\Debug\netcoreapp3.1\Accepted.csproj.CoreCompileInputs.cache
+C:\Users\steli\source\repos\Accepted2\AccepedTest\Accepted\obj\Debug\netcoreapp3.1\Accepted.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\steli\source\repos\Accepted2\AccepedTest\Accepted\obj\Debug\netcoreapp3.1\Accepted.MvcApplicationPartsAssemblyInfo.cache
