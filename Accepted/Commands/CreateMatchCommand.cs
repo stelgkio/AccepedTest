@@ -30,7 +30,7 @@ namespace Accepted.Commands
             RuleFor(x => x.MatchDate).NotEmpty();
             RuleFor(x => x.TeamA).NotEmpty();
             RuleFor(x => x.TeamB).NotEmpty();
-            RuleFor(x => x.Sport).NotNull().NotEmpty().IsInEnum().WithMessage("Sport can only be Football,  or BasketBall");
+            RuleFor(x => x.Sport).NotNull().NotEmpty().IsInEnum().WithMessage("Sport can only be Football, or BasketBall");
 
         }
     }

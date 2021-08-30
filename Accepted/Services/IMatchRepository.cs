@@ -1,4 +1,5 @@
-﻿using Accepted.Models;
+﻿using Accepted.Commands;
+using Accepted.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,12 +9,10 @@ namespace Accepted.Services
 {
     public interface IMatchRepository
     {
-
         Task AddMatch(Match data);
         Task<Match> GetMatchById(int Id);
-
         Task<List<Match>> GetAllMatchs();
-
-        Task UpdateMatch(Match data);
+        Task UpdateMatch(UpdateMatchCommands data);
+        Task<Match> DeleteMatch(int Id);
     }
 }

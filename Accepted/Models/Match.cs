@@ -29,10 +29,12 @@ namespace Accepted.Models
             this.MatchDate = data.MatchDate;
             this.TeamA = data.TeamA;
             this.TeamB = data.TeamB;
-           
+            this.Sport = data.Sport;
+
+
         }
 
-        public void UpdateData(Match data)
+        public void UpdateData(UpdateMatchCommands data)
         {
             this.Description = data.Description;
             this.MachTime = data.MachTime;
