@@ -41,12 +41,14 @@ namespace Accepted
                 );
             services.AddSwaggerGen(c =>
             {
+
                 c.SwaggerDoc("v1", new OpenApiInfo {
                     Version = "v1",
                     Title = "Accepted API",
                     Description = "A simple example ASP.NET Core Web API",
-                    
+
                 });
+               
             });
             services.AddTransient<IMatchRepository, MatchRepository>();
             services.AddTransient<IMatchOddRepository, MatchOddRepository>();

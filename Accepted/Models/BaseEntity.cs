@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Accepted.Models
 {
-    public class BaseEntity
+    public abstract class BaseEntity
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
